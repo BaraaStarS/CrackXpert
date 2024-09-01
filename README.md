@@ -14,19 +14,12 @@ Hydra: Perform brute-force attacks on various services using Hydra.
 # Installation
 To set up CrackXpert, follow these steps:
 
-Clone the Repository:
-
-bash
-Copy code
+1)Clone the Repository:
 sudo git clone https://github.com/BaraaStarS/CrackXpert.git
-Set Permissions: Make the main script and all scripts in the lib directory executable:
 
-bash
-Copy code
+2)Set Permissions: Make the main script and all scripts in the lib directory executable:
 chmod +x crackxpert.sh lib/*.sh
-Run CrackXpert: Execute the main script to start the tool:
 
-bash
-Copy code
+3)Run CrackXpert:
 ./crackxpert.sh
 
