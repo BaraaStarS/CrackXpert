@@ -11,8 +11,11 @@ Crack Xpert is an automated password cracking suite designed to integrate and st
 3) Hash Calculation: Compute the hash of a given word using various popular hashing algorithms.
 4) Password Strength Estimator: Estimate the strength of a password and suggest improvements or alternatives based on predefined criteria.
 5) Integration with Cracking Tools:
+   
    John the Ripper: Run password cracking tasks using John the Ripper.
+   
    Hashcat: Use Hashcat for advanced password cracking.
+   
    Hydra: Perform brute-force attacks on various services using Hydra.
 
    
