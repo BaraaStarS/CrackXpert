@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Color codes
+COLOR_MAGENTA="\033[1;35m"
+COLOR_RESET="\033[0m"
+COLOR_GRAY="\033[1;30m"
+COLOR_GREEN="\033[1;32m"
+COLOR_CYAN="\033[1;36m"
+COLOR_RED="\033[1;31m"
+
+
