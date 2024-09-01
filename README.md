@@ -13,10 +13,20 @@ Hashcat: Use Hashcat for advanced password cracking.
 Hydra: Perform brute-force attacks on various services using Hydra.
 # Installation
 To set up CrackXpert, follow these steps:
-1- Clone the Repository:
+
+Clone the Repository:
+
+bash
+Copy code
 sudo git clone https://github.com/BaraaStarS/CrackXpert.git
-2- Set Permissions: Make the main script and all scripts in the lib directory executable:
+Set Permissions: Make the main script and all scripts in the lib directory executable:
+
+bash
+Copy code
 chmod +x crackxpert.sh lib/*.sh
-3- Run CrackXpert: Execute the main script to start the tool:
+Run CrackXpert: Execute the main script to start the tool:
+
+bash
+Copy code
 ./crackxpert.sh
 
