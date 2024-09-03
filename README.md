@@ -23,19 +23,19 @@ CrackXpert is an automated password cracking suite designed to integrate and str
 # Installation
 To set up CrackXpert, follow these steps:
 
-1)Clone the Repository:
+1) Clone the Repository:
 
 `
 sudo git clone https://github.com/BaraaStarS/CrackXpert.git
 `
 
-2)Set Permissions: Make the main script and all scripts in the lib directory executable:
+2) Set Permissions: Make the main script and all scripts in the lib directory executable:
 
 `
 chmod +x crackxpert.sh lib/*.sh
 `
 
-3)Run CrackXpert:
+3) Run CrackXpert:
 
 `
 ./crackxpert.sh
