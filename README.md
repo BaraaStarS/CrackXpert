@@ -41,3 +41,9 @@ chmod +x crackxpert.sh lib/*.sh
 ./crackxpert.sh
 `
 
+# Disclaimer
+CrackXpert is my first project in the realm of automated password cracking, and while I have strived to ensure its functionality, it is important to acknowledge that the tool may not deliver 100% accuracy in all scenarios.
+
+This tool is a work in progress, and I am committed to continuously developing and improving it. I greatly appreciate any feedback, suggestions, or bug reports from the community. Your input is invaluable in helping me enhance CrackXpert to better meet the needs of users.
+
+Thank you for your understanding and support as I work to make CrackXpert a reliable and robust tool for the cybersecurity community.
