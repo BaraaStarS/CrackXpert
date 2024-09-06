@@ -3,8 +3,8 @@
 
 CrackXpert is an automated password cracking suite designed to integrate and streamline multiple password-cracking tools into a unified interface. Built with Bash scripting, Crack Xpert provides a user-friendly CLI for performing password cracking tasks.
 
-![crackXpert](https://github.com/user-attachments/assets/3db55124-967d-43bd-97b9-df524344acc0)
 
+![CracXpert](https://github.com/user-attachments/assets/6299e3ef-e877-4ce8-8f77-3abb9b6b7397)
 
 # Features 
 1) Wordlist Generation: Generate custom wordlists based on user-provided information to improve the success rate of password cracking.
