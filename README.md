@@ -15,9 +15,6 @@ CrackXpert is an automated password cracking suite designed to integrate and str
    
    John the Ripper: Run password cracking tasks using John the Ripper.
    
-   Hashcat: Use Hashcat for advanced password cracking.
-   
-   Hydra: Perform brute-force attacks on various services using Hydra.
 
    
 # Installation
