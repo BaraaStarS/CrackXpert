@@ -51,6 +51,6 @@ echo
 echo -e " \e[95mCalculating the hash for the word:\033[0m $word"
 calculate_hash "$word" "$hash_type"
 
-# Exit the script
+
 exit 0
 
