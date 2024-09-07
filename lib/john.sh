@@ -277,8 +277,7 @@ while true; do
     echo -e "\033[0;36m4) 7z2john \033[0m"
     echo -e "\033[0;36m5) pcap2john \033[0m"
     echo -e "\033[0;36m6) hccap2john\033[0m"
-    echo -e "\033[0;36m7) Normal crack\033[0m"
-    echo -e "\033[0;31m8) Exit \033[0m"
+    echo -e "\033[0;31m7) Exit \033[0m"
 
 read -p "$(echo -e "\e[92mEnter your choice:\e[0m ")" choice
 
