@@ -60,7 +60,7 @@ profile["spechars1"]="${add_spechars,,}"
 read -p "$(echo -e "\e[93m>\033[0m \e[92mDo you want to add some random numbers at the end of words? Y/[N]:\033[0m ")" add_randnum
 profile["randnum"]="${add_randnum,,}"
 
-# Function to generate wordlist
+
 generate_wordlist_from_profile() {
     local wordlist_file="wordlist.txt"
     > "$wordlist_file"
@@ -85,10 +85,10 @@ generate_wordlist_from_profile() {
     for date in "${birthdates[@]}"; do
         if [ "$date" != "n/a" ]; then
             echo "$date" >> "$wordlist_file"
-            echo "${date:0:2}" >> "$wordlist_file"   # Day
-            echo "${date:2:2}" >> "$wordlist_file"   # Month
-            echo "${date:4:4}" >> "$wordlist_file"   # Year
-            echo "${date:0:4}" >> "$wordlist_file"   # Year+Month
+            echo "${date:0:2}" >> "$wordlist_file"   
+            echo "${date:2:2}" >> "$wordlist_file"   
+            echo "${date:4:4}" >> "$wordlist_file"   
+            echo "${date:0:4}" >> "$wordlist_file"   
         fi
     done
 
