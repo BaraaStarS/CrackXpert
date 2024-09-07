@@ -22,8 +22,8 @@ function loading_icon() {
 
     echo -n "${loading_message} "
 
-    tput civis  # Hide the cursor
-    trap "tput cnorm" EXIT  # Ensure cursor is restored on exit
+    tput civis 
+    trap "tput cnorm" EXIT  
     while [ "${load_interval}" -ne "${elapsed}" ]; do
         for frame in "${loading_animation[@]}" ; do
             printf "%s\b" "${frame}"
@@ -53,7 +53,7 @@ if [ -z "$target" ]; then
     exit 1
 fi
 
-# Prompt user for the service to attack
+
 echo -e "${COLOR_CYAN}Choose the service to attack:${COLOR_RESET}"
 echo -e  " \e[96m1) ssh\033[0m "
 echo -e " \e[96m2) ftp\033[0m "
