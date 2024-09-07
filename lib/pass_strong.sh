@@ -16,19 +16,15 @@ echo -e " \e[32m - Complexity: Lacks variety; may consist of only lowercase lett
 echo -e " \e[32m - Predictability: Uses common words, phrases, or easily guessable information.\033[0m"
 
 
-#!/bin/bash
 
-# Function to suggest a stronger password
 suggest_stronger_password() {
     local password="$1"
     local new_password="$password"
 
-    # Ensure the password is at least 12 characters long
     while [ ${#new_password} -lt 12 ]; do
         new_password+="$(echo $RANDOM | md5sum | head -c 1)"
     done
 
-    # Ensure the password contains at least one uppercase, lowercase, number, and special character
     if ! [[ "$new_password" =~ [A-Z] ]]; then
         new_password+="A"
     fi
@@ -48,13 +44,11 @@ suggest_stronger_password() {
     echo "$new_password"
 }
 
-# Function to estimate the password strength
 estimate_password_strength() {
     local password="$1"
     local score=0
     local length=${#password}
 
-    # Criteria 1: Length of the password
     if [ "$length" -ge 12 ]; then
         score=$((score + 25))
     elif [ "$length" -ge 8 ]; then
@@ -63,37 +57,35 @@ estimate_password_strength() {
         score=$((score + 5))
     fi
 
-    # Criteria 2: Uppercase and lowercase letters
+    
     if [[ "$password" =~ [A-Z] ]] && [[ "$password" =~ [a-z] ]]; then
         score=$((score + 20))
     fi
 
-    # Criteria 3: Numbers
+    
     if [[ "$password" =~ [0-9] ]]; then
         score=$((score + 20))
     fi
 
-    # Criteria 4: Special characters
+    
     if [[ "$password" =~ [\@\#\$\%\^\&\*\(\)\-\+\=\!\?\>\<] ]]; then
         score=$((score + 20))
     fi
-
-    # Criteria 5: No repeating characters (same character more than twice)
     if ! [[ "$password" =~ (.)\1{2,} ]]; then
         score=$((score + 15))
     fi
 
-    # Criteria 6: No common patterns (e.g., "1234", "password")
+    
     if ! [[ "$password" =~ 1234|abcd|password|qwerty ]]; then
         score=$((score + 10))
     fi
 
-    # Criteria 7: Not too sequential (e.g., "abcd", "1234")
+    
     if ! [[ "$password" =~ [a-zA-Z]{4} || "$password" =~ [0-9]{4} ]]; then
         score=$((score + 10))
     fi
 
-    # Output strength estimation
+    
     if [ "$score" -ge 80 ]; then
         echo -e "\e[92mStrong password\033[0m"
     elif [ "$score" -ge 50 ]; then
@@ -106,10 +98,10 @@ estimate_password_strength() {
     echo -e "\e[93m\e[47mScore: $score/100\033[0m"
 }
 
-# Prompt user for password
+
 read -s -p "$(echo -e "\e[94mEnter your password:\033[0m " )" user_password
 echo
 
-# Estimate password strength
+
 estimate_password_strength "$user_password"
 
